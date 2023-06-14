@@ -28,7 +28,8 @@ margin-bottom: 15px;
 }
 .wsite-logo {
   display: inline-block;
-  vertical-align: top
+  vertical-align: top;
+  padding-left:30px;
   
 }
 
