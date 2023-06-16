@@ -1,0 +1,10 @@
+.wsite-image{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align :right;
+}
+@media only screen and (max-width: 992px) {
+    .wsite-image{
+        padding-top: 130px;
+}
+}
