@@ -7,7 +7,6 @@ body {
   background: #f9f9f9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-width:320px;
 }
 #header{text-align: center;
   margin-top: 30px;
@@ -23,12 +22,11 @@ margin-bottom: 15px;
  
   text-align: justify;
   padding-top: 30px;
-  padding-inline: 50px;
+  padding-inline: 5px;
 }
 .wsite-logo {
   display: inline-block;
-  vertical-align: top;
-  padding-left:30px;
+  vertical-align: top
   
 }
 
@@ -124,8 +122,28 @@ line-height:34px;}
 
 @media only screen and (max-width: 992px) {
   /* hide classic menu */
-
-
+ 
+  #header {
+    padding: 0 10px;
+    border-bottom: solid 1px #d0d0d0;
+    height: 65px;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 11;
+}
+  .nav-trigger {
+    display: table-cell;
+    vertical-align: middle;
+    width: 24px;
+}
+.wsite-logo {
+  margin: 3px 54px 0 0;
+}
   #topnav_menu {
     display: none;
   }
@@ -148,7 +166,7 @@ line-height:34px;}
     position: absolute;
     margin: 0;
     right: 0;
-    top: 140px;
+    top: 153px;
     width: 100vw;
     height: 100vh;
 
@@ -207,12 +225,9 @@ line-height:34px;}
     display: block;
     position: relative;
     margin: 16px;
-    width: 33px;
-   
-    
-
-    z-index: 100;
-
+    padding: 15px;
+    width: 24px;
+    z-index: 11;
     -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
@@ -222,11 +237,11 @@ line-height:34px;}
   #topnav_hamburger_icon span {
     display: block;
     position: absolute;
-    height: 4px;
-    width: 100%;
-    margin-bottom: 5px;
+    height: 2px;
+    width: 29px;
+    margin: 5px;
 
-    background:grey;
+    background:#484848;
     border-radius: 3px;
 
     z-index: 100;
@@ -274,7 +289,7 @@ line-height:34px;}
 
   /* the first span rotates 45° \ */
   #topnav_hamburger_icon.open span:nth-child(1) {
-    width: 110%;
+    width: 65%;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -289,7 +304,7 @@ line-height:34px;}
 
   /* the last span rotates -45° / */
   #topnav_hamburger_icon.open span:nth-child(3) {
-    width: 110%;
+    width: 65%;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
