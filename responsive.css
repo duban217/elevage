@@ -70,6 +70,9 @@ margin-bottom: 15px;
   margin-left: auto;
 
 }
+.wsite-section-wrap
+{
+  width: 100%;}
 
 .topnav {
   background-color: #ffffff;
@@ -90,7 +93,7 @@ margin-bottom: 15px;
   margin-left: auto;
 }
 .topnav_link:hover {
-  color: #dea227;
+  color: orange;
   background-color: #f6f6f6;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
@@ -110,10 +113,13 @@ margin-bottom: 15px;
 }
 .wsite-image{
 height:350px;
+max-width:100%;
+
 }
 .wsite-image1
 {
   padding-top:100px;
+
 }
 .paragraph
 {margin:0 auto 1em;
@@ -178,6 +184,16 @@ line-height:34px;}
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
+  #topnav_responsive_menu li:hover {
+    color: inherit;
+    background-color: #f6f6f6;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
   #topnav_responsive_menu ul {
     display: flex;
     flex-direction: column;
@@ -193,7 +209,7 @@ line-height:34px;}
 
     text-align :left;
 
-    background: #ededed;
+    background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
   }
@@ -204,7 +220,11 @@ line-height:34px;}
 
   #topnav_responsive_menu a {
     white-space: nowrap;
-      color: #dea227;
+      color: inherit;
+      padding:10px;
+      font-family: "Montserrat";
+      font-weight:400;
+      letter-spacing: 1px;
       text-decoration: none;
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
