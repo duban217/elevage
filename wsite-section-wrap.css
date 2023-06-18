@@ -5,6 +5,16 @@
     display: flex;
 justify-content: center;
 }
+.wsite-image{
+    height:350px;
+    max-width:100%;
+    
+    }
+    .wsite-image1
+    {
+      padding-top:100px;
+    
+    }
 .paragraphLegendePhoto
 {
     text-align: center; 
@@ -16,8 +26,11 @@ justify-content: center;
 }
 @media only screen and (max-width: 992px) {
     .wsite-image{
-        padding-top: 130px;
-       
+        padding-top: 130px;} 
 }
 
+@media only screen and (max-width: 480px) {
+    .wsite-image{
+        padding-top: 130px;}
 }
+
