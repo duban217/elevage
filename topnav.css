@@ -36,41 +36,5 @@
   #topnav_responsive_menu {
     display: none;
   }
-  .topnav {
-    background-color: #ffffff;
-    display:flex;
-    align-items :center;
-    width: 100%;
-    padding: 10px 14px;
-    margin:auto;
-  }
-  .topnav_link {
-    color :#484848;
-    padding: 9px;
-    text-decoration: none;
-    text-align: center;
-    list-style-type: none;
-    margin-left: 25px;
-    margin-right: 60px;
-    margin-left: auto;
-  }
-  .topnav_link:hover {
-    color: orange;
-    background-color: #f6f6f6;
-    text-decoration: none;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  .topnav a{
-    font-family: "Montserrat";
-    letter-spacing: 1px;
-  }
+
   
-  /* hide responsive menu */
-  #topnav_hamburger_icon,
-  #topnav_responsive_menu {
-    display: none;
-  }
- 
