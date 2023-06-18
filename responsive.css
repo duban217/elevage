@@ -1,5 +1,7 @@
 @media (max-width: 992px)  {
-  
+    #topnav{
+    display:none;
+  }
   /* show responsive menu and position at the right of the screen */
   #topnav_responsive_menu {
     display: block;
