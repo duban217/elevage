@@ -48,6 +48,8 @@
       display: flex;
       justify-content: center;
       max-width:100%;
+      overflow-clip-margin: content-box;
+    overflow: clip;
      }
     }
 
