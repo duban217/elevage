@@ -38,11 +38,8 @@
   max-width: 100%;
   display: flex;
   overflow: hidden;
+   padding-top: 130px
   }
-    
-    .wsite-image{
-        padding-top: 150px;}
-}
 wsite-image a
 {
     height:60 px;}
