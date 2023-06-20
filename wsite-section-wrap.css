@@ -1,6 +1,6 @@
 .wsite-section-wrap
 {
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   }
 
@@ -37,7 +37,7 @@
 @media only screen and (max-width: 480px) {
     .wsite-section-wrap
 {
-  max-width: 100%;
+  max-width: 90%;
   display: flex;
  
   overflow: hidden;
