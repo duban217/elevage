@@ -7,10 +7,10 @@
 .wsite-image{
     padding-top: 100px;
     padding-bottom: 10px;
-    display: flex;
     justify-content: center;
     max-width: 100%;
-    max-height: 30;
+    
+
     }
     .wsite-image1
     {
@@ -33,17 +33,18 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .wsite-section-wrap{
+    .wsite-section-wrap
+{
   max-width: 100%;
   display: flex;
   overflow: hidden;
-   padding-top: 130px
-  margin-top:30px; }
-.wsite-image{
+  }
+    
+    .wsite-image{
       padding-top: 130px;
       margin-top:100px;}
-.wsite-image a
- {height : 60 px;
- }
 }
+wsite-image a
+{
+    height:60 px;}
 
