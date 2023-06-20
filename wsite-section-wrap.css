@@ -39,6 +39,7 @@
 {
   max-width: 100%;
   display: flex;
+  background:transparent;
  
   overflow: hidden;
   }
@@ -46,7 +47,6 @@
     .wsite-image{
       padding-top: 200px;
       display: flex;
-      background:transparent;
       max-width:100%;
       overflow-clip-margin: content-box;
     overflow: clip;
