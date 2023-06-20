@@ -37,14 +37,14 @@
 @media only screen and (max-width: 480px) {
     .wsite-section-wrap
 {
-  max-width: 60%;
+  max-width: 100%;
   display: flex;
  
   overflow: hidden;
   }
     
     .wsite-image{
-      padding-top: 180px;
+      padding-top: 200px;
       display: flex;
       justify-content: center;
       max-width:100%;
