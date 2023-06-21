@@ -37,6 +37,7 @@
 {
   display: flex;
   overflow: hidden;
+  width:480px;
   }
     
     .wsite-image{
@@ -44,7 +45,7 @@
 padding-top: 160px;
 display: flex;
 justify-content: center;
-width:480px;
+
      }
     }
 
