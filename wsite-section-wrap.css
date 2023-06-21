@@ -31,5 +31,6 @@ justify-content: center;
 
 @media only screen and (max-width: 480px) {
     .wsite-image{
-        padding-top: 130px;}
+        padding-top: 130px;
+    flex-shrink:1;}
 }
