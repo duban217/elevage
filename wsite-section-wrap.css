@@ -26,7 +26,8 @@ justify-content: center;
 }
 @media only screen and (max-width: 992px) {
     .wsite-image{
-        padding-top: 130px;} 
+        padding-top: 130px;
+    flex-shrink:1} 
 }
 
 @media only screen and (max-width: 480px) {
