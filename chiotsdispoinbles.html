@@ -4,32 +4,36 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html"charset="UTF-8">
     <link rel="stylesheet" href="responsive.css" type="text/css" media="screen"/>
-    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="wsite-section-wrap.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="topnav.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="topnavResponsive.css" type="text/css" media="screen"/>
+
     <meta name="viewport" content="width=device-width"/>
+    <script src="javascript.js"></script>
     
     <title> siteElevage </title>
     
-     
 </head>
-<body class="header-page wsite-page-index full-width-on wsite-theme-light postload">
-  <div class="body-wrap">
+<body class="header-page wsite-page-index full-width-on wsite-theme-light" >
   <div id="header" onclick="showResponsiveMenu()">
-    <div id="sitename">
+    
+      <div class="nav-trigger hamburger">
       <a id="topnav_hamburger_icon"  >
         <!-- Some spans to act as a hamburger -->
         <span></span>
         <span></span>
         <span></span>
       </a>
-     
-  
-      
+      </div>
+      <div id="sitename">
       <span class="wsite-logo">
           <a href="index.html">
               <span id="wsite-title" >&Eacute;levage de Berger Blanc Suisse de l'Orée du Bois Blanc</span>
           </a>
-      </span> </div>
+      </span> 
+      </div>
   </div>
+
 <div id="root">
   <div id="topnav" class="topnav">
     <a id="home_link" class="topnav_link" href="index.html">ACCUEIL</a>
@@ -37,7 +41,7 @@
     <!-- Classic Menu -->
     <nav role="navigation" id="topnav_menu">
       <a class="topnav_link" href="">PRESENTATION</a>
-      <a class="topnav_link" href="">NOS CHIENS</a>
+      <a class="topnav_link" href="/contact-us">NOS CHIENS</a>
       <a class="topnav_link" href="chiotsdispoinbles.html">CHIOTS DISPONIBLES</a>
       <a class="topnav_link" href="contact.html">CONTACT</a>
       <a class="topnav_link" href="/contact-us"></a>
@@ -56,14 +60,15 @@
     </nav>
   </div>
 </div>
+
 <div class="wsite-section-wrap">
-  <div class="wsite-image" style="padding-top: 10px;padding-bottom: 10px;text-align :right;">
-    <a><img src="photochiots.png" style="width:100%;"/></a>
+  <div class="wsite-image">
+    <a><img src="photochiots.png"
+      ></a>
   </div>
 </div>
-
 <!--Paragraphe Chiots d'Opale-->
-  <div class="paragraphLegendePhoto" style="text-align: center; display:block;font-size :30px; padding-bottom: 40px; text-decoration :underline;">
+  <div class="paragraphLegendePhoto">
 
 Portée d'Opale : chiots disponibles le 1er juillet 2023
 </div>
