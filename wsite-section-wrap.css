@@ -26,7 +26,7 @@
 }
 @media only screen and (max-width: 992px) {
     .wsite-image{
-        padding-top: 160px;
+        padding-top: 120px;
         display: flex;
         justify-content: center;
         } 
