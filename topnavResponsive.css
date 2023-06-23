@@ -57,17 +57,22 @@
     white-space: nowrap;
       color: inherit;
       padding:10px;
-      font-family: "Montserrat";
       font-weight:400;
       letter-spacing: 1px;
       text-decoration: none;
+      margin: 0 15px;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      font-family: "Montserrat";
+      font-size: 0.9em;
       
   }
 
 
   /* And let's slide it in from the right */
   #topnav_responsive_menu.open {
-    transform: none;
+    transform:scale(1);
     position: fixed;
   }
 
@@ -208,7 +213,7 @@
     top: 0;
 
     min-width: 50vw;
-    height: 100vh;
+    height: 53vh;
     padding: 10px 0 0;
 
     text-align :left;
