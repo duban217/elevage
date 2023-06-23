@@ -175,9 +175,9 @@ line-height:34px;}
   }
 
   .paragraph {
-    font-size: 1em !important;
-    line-height: 1.5em !important;
-    padding-left: 20px;
+    font-size: 1.2em !important;
+    line-height: 1.7em !important;
+    padding-left: 30px;
 }
 .wsite-logo a {
   color: #484848;
@@ -186,6 +186,8 @@ line-height:34px;}
   font-size: 25px;
   text-transform: none;
   text-decoration-line: none;}
+
+  
 }
 @media (max-width: 767px)
 {.wsite-image {
