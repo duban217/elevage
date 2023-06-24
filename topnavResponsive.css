@@ -206,39 +206,35 @@
   #topnav_responsive_menu ul {
     display: flex;
     flex-direction: column;
-
     position: absolute;
-    margin: 0;
-    
+    /* margin: 20px; */
     top: 0;
-
     min-width: 50vw;
-    height: 53vh;
-    padding: 10px 0 0;
-
+    height: 39vh;
+    padding: 0px 0 0;
     text-align :left;
-
     background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
   }
 
   #topnav_responsive_menu li {
-    padding: 12px 24px;
+    padding: 25px 35px;
+    font-size: x-large;
   }
 
   #topnav_responsive_menu a {
     white-space: nowrap;
-      color: inherit;
-      padding:10px;
-      font-family: "Montserrat";
-      font-weight:400;
-      letter-spacing: 1px;
-      text-decoration: none;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
+    color: inherit;
+    padding:10px;
+    font-family: "Montserrat";
+    font-weight:400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
 
