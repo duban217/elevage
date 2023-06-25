@@ -6,23 +6,31 @@
 
 .wsite-image{
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     justify-content: center;
     max-width: 100%;
     }
-    .wsite-image1
-    {
-      padding-top:100px;
     
-    }
+  
+  .img 
+  { width:35%; 
+    padding-top:100px;
+    padding-bottom: 5px;  
+    padding-left: 130px;
+    height:auto;}
+    
 .paragraphLegendePhoto
 {
-    text-align: center; 
-    display:block;
-    font-size :30px; 
-    padding-top: 80px;
-  padding-bottom: 30px; 
-  text-decoration :underline;
+  font-size: 18px; 
+  line-height: 1.5em;
+  padding-left: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 50px;
+padding-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  color: #444140;
+ 
 }
 @media only screen and (max-width: 992px) {
     .wsite-image{
@@ -30,6 +38,13 @@
         display: flex;
         justify-content: center;
         } 
+    .paragraphLegendePhoto{text-decoration: none;
+      padding-top: 50px;
+      padding-bottom: 15px;
+      text-align: center;
+      font-size: 1em !important;
+      line-height: 1.5em !important;
+      padding-left: 20px;}
 }
 
 @media only screen and (max-width: 480px) {
@@ -43,11 +58,30 @@
     .wsite-image{
      
 display: flex;
-     
 padding-top: 123px;
-     
 justify-content: center;
      }
-    }
+
+     .wsite-image{
+      display: inline-flex;
+      justify-content: center;}
+     
+    .img 
+    { width:35%; 
+      padding-left: 45px;
+      height:auto;
+    padding-top:0px;}
+       
+     
+     .paragraphLegendePhoto {
+      text-align: center;
+      display: block;
+      padding-bottom: 30px;
+      font-size: 1.2em !important;
+      line-height: 1.7em !important;
+      text-decoration: none;
+      color: #444140;
+    padding-top:0px;}
+     }
 
 
