@@ -78,7 +78,10 @@ margin-bottom: 15px;
 .paragraph
 {margin:0 auto 1em;
   font-size:18px;
-line-height:34px;}
+line-height:34px;
+padding-bottom: 15px;}
+
+
 
 @media only screen and (max-width: 992px) {
   /* hide classic menu */
@@ -177,8 +180,10 @@ line-height:34px;}
   .paragraph {
     font-size: 1.2em !important;
     line-height: 1.7em !important;
-    padding-left: 60px;
-}
+    padding-left: 60px;}
+
+
+
 .wsite-logo a {
   color: #484848;
   font-family: 'Raleway';
@@ -186,12 +191,7 @@ line-height:34px;}
   font-size: 25px;
   text-transform: none;
   text-decoration-line: none;}
-
-  
 }
-@media (max-width: 767px)
-{.wsite-image {
-  height: auto;
-}}
+
 
 
