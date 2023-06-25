@@ -13,11 +13,13 @@
     
   
   .img 
-  { width:35%; 
+  {
+    width:35%;
     padding-top:100px;
-    padding-bottom: 5px;  
+    padding-bottom: 5px;
     padding-left: 130px;
-    height:auto;}
+    height:auto;
+    }
     
 .paragraphLegendePhoto
 {
@@ -67,10 +69,12 @@ justify-content: center;
       justify-content: center;}
      
     .img 
-    { width:35%; 
-      padding-left: 45px;
+    {
+      width: 90%;
+      padding-left: 40px;
       height:auto;
-    padding-top:0px;}
+      padding-top: 20px;
+      }
        
      
      .paragraphLegendePhoto {
