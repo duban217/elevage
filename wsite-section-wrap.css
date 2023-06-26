@@ -15,10 +15,11 @@
   .img 
   {
     width:35%;
-    padding-top:100px;
+    padding-top:40px;
     padding-bottom: 5px;
-    padding-left: 130px;
     height:auto;
+    margin: auto;
+display: flex;
     }
     
 .paragraphLegendePhoto
@@ -34,6 +35,15 @@ padding-top: 10px;
   color: #444140;
  
 }
+.titreh2
+{text-align: center; 
+  font-family:'Times New Roman';
+  transform: none;
+  color: #42514c;
+  font-size: 30px ;
+margin-top:30px;}
+
+
 @media only screen and (max-width: 992px) {
     .wsite-image{
         padding-top: 120px;
@@ -47,6 +57,14 @@ padding-top: 10px;
       font-size: 1em !important;
       line-height: 1.5em !important;
       padding-left: 20px;}
+
+      .titreh2
+{text-align: center; 
+  font-family:'Times New Roman';
+  transform: none;
+  color: #42514c;
+  font-size: 30px ;
+  margin-top:80px;}
 }
 
 @media only screen and (max-width: 480px) {
@@ -70,22 +88,37 @@ justify-content: center;
      
     .img 
     {
-      width: 100%;
-      padding-left: 40px;
+      width: 80%;
       height:auto;
       padding-top: 20px;
+      margin: auto;
+display: flex;
       }
        
      
      .paragraphLegendePhoto {
-      text-align: center;
+      
       display: block;
       padding-bottom: 30px;
       font-size: 1.2em !important;
       line-height: 1.7em !important;
       text-decoration: none;
       color: #444140;
-    padding-top:0px;}
+    padding-top:0px;
+    margin: auto;
+    display: flex;} 
+
+
+    .titreh2
+{text-align: center; 
+  font-family:'Times New Roman';
+  transform: none;
+  color: #42514c;
+  font-size: 30px ;
+margin-top: 180px;}
+
      }
+
+    
 
 
