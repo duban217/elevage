@@ -13,7 +13,7 @@ function display_photo(p_name,p_w,p_h,p_legend) {
     }
     if (Number(p_w) < winwidth) winwidth = Number(p_w);
     if (Number(p_h) < winheight) winheight = Number(p_h);
-    winwidth += 8; winheight += 40;
+    winwidth += 12; winheight += 60;
   pwin=window.open("","","toolbar=0,location=0,directories=0,status=0,menubar=0,resizable=1,scrollbars=yes,copyhistory=0,width="+winwidth+",height="+winheight+",left=10,top=10" );
     pwin.document.write("<html><head>" );
     pwin.document.write("<title>Zoom</title>" );
