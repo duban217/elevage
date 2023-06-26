@@ -22,14 +22,14 @@ function display_photo(p_name,p_w,p_h,p_legend) {
     pwin.document.write("margin:0;" );
     pwin.document.write("padding:0;" );
     pwin.document.write("color:white;" );
-    pwin.document.write("background-color:black; }" );
+    pwin.document.write("background-color:white; }" );
     pwin.document.write("</style>" );
     pwin.document.write("</head>" );
     pwin.document.write("<body>" );
     pwin.document.write("<img src="+p_name+" width="+p_w+" height="+p_h+">" );
     pwin.document.write("<table noborder width=100%><tr>" );
     pwin.document.write("<form><td align=left>"+p_legend+"</td>" );
-    pwin.document.write("<td align=right><input type='button' value='Fermer' onClick='window.close()'></td>" );
+    pwin.document.write("<td align=right><input type='button' value='Close' onClick='window.close()'></td>" );
     pwin.document.write("</tr></table></form>" );
     pwin.document.write("</body></html>" );
  }
