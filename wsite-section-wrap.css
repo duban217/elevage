@@ -85,28 +85,41 @@ justify-content: center;
      .wsite-image{
       display: inline-flex;
       justify-content: center;}
+
+    .wsite-image1
+    {margin:auto;}
      
     .img 
     {
-      width: 80%;
+      width: 110%;
       height:auto;
-      padding-top: 20px;
-      margin: auto;
-display: flex;
+      padding: 25px;
+      /* margin: auto; */
+      /* display: flex; */
       }
        
      
      .paragraphLegendePhoto {
       
-      display: block;
-      padding-bottom: 30px;
-      font-size: 1.2em !important;
-      line-height: 1.7em !important;
-      text-decoration: none;
-      color: #444140;
-    padding-top:0px;
-    margin: auto;
-    display: flex;} 
+display: block;
+      
+padding-bottom: 30px;
+      
+font-size: 1.2em !important;
+      
+line-height: 1.7em !important;
+      
+text-decoration: none;
+      
+color: #444140;
+      
+padding-top:0px;
+      
+margin: auto;
+      
+display: flex;
+      
+} 
 
 
     .titreh2
