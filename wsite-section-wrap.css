@@ -5,7 +5,7 @@
   }
 
 .wsite-image{
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
     justify-content: center;
     max-width: 100%;
@@ -78,13 +78,17 @@ margin-top:30px;}
     .wsite-image{
      
 display: flex;
-  padding-top: 113px;
+     
+/* padding-top: 123px; */
+     
 justify-content: center;
      }
 
      .wsite-image{
       display: inline-flex;
-      justify-content: center;}
+      justify-content: center;
+      padding-top: 113px;
+      }
 
     .wsite-image1
     {margin:auto;}
@@ -115,7 +119,7 @@ color: #444140;
       
 padding-top:0px;
       
-margin: auto;
+margin-left:60px;
       
 display: flex;
       
