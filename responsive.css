@@ -7,6 +7,7 @@ body {
   background: #f9f9f9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
 #header{text-align: center;
   margin-top: 30px;
@@ -18,10 +19,9 @@ margin-bottom: 15px;
   font-style: italic;
   color: #76b3b8;
   text-transform: none;
-  letter-spacing: 3px ;
- 
+  letter-spacing: 3px;
   text-align: justify;
-  padding-top: 30px;
+  /* margin-top: 50px; */
   padding-inline: 5px;
 }
 .wsite-logo {
@@ -146,17 +146,18 @@ margin-bottom: 15px;
   /* hide classic menu */
  
   #header {
-    padding: 0 10px;
+    padding: 20px 10px;
     border-bottom: solid 1px #d0d0d0;
     height: 120px;
     box-sizing: border-box;
     display: table;
-    width: 100%;
+    width:100%;
     position: fixed;
-    top: 0;
+    margin-top: 0;
     left: 0;
     background: #ffffff;
     z-index: 11;
+    padding-bottom: 30px;
 }
   .nav-trigger {
     display: table-cell;
