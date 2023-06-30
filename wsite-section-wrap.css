@@ -162,12 +162,13 @@ display: flex;
   .paragraphExplication{
     font-size: 18px;
     line-height: 1.5em;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: #777777;
-    letter-spacing: 1px;
-
+text-decoration: none;
+text-align: center;
+font-family: 'Raleway', sans-serif;
+color: #777777;
+letter-spacing: 1px;
+padding: 20px 20px 20px 40px;
+width: 100%;
   }
   
   }
