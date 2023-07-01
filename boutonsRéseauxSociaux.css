@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,500;1,400&family=Sriracha&display=swap');
+
+.boutonsReseaux{
+    margin:0;
+    margin-bottom: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    display:grid;
+    height:10vh;
+    place-items: center;
+    background: linear-gradient(to bottom left, #dad4ec, #f3e7e9);
+}
+.boutonsReseaux .button
+{
+    background-color: white;
+    width:56px;
+    height:56px;
+    float:left;
+    border-radius: 50px;
+    margin:0 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.boutonsReseaux .button:hover{
+    width:160px;
+}
+.boutonsReseaux .button:nth-child(1):hover{
+background-color: #4267b2;
+color:#fff;
+
+}
+.button .s-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:56px;
+    height:56px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    
+}
+.button .s-icon i{
+    font-size: 24px;
+}
+.button span {
+    font-size:18px;
+    font-weight: 600;
+    text-transform: none;
+    
+}
+
+@media only screen and (max-width: 480px) {
+.boutonsReseaux{
+    margin:0;
+    margin-bottom: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    display:grid;
+    height:10vh;
+    width: 480px;
+    place-items: center;
+    background: linear-gradient(to bottom left, #dad4ec, #f3e7e9);
+}
+}
