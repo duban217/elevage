@@ -231,7 +231,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin-top: -12px;
+    margin-top: -11px;
     text-align :center;
     min-width: 125vw;
     color:#8e8e8e;
@@ -384,12 +384,12 @@
     flex-direction: column;
 
     position: absolute;
-    margin: -12px;
+    margin: -11px;
     
     top: 0;
     line-height: 6vh;
     min-width: 140vw;
-    height: 58vh;
+    height: 63vh;
     padding: 15px 0 0;
 
     text-align :center;
