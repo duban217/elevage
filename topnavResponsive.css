@@ -7,21 +7,21 @@
     position: absolute;
     margin: 0;
     left: 0;
-    top: 153px;
+    top: 155px;
     width: 100vw;
     height: 100vh;
 
     z-index: 99;
 
     transform-origin: 0% 0%;
-    transform: initial;
+  
 
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: all 0.5s ease;
   }
 
   #topnav_responsive_menu li:hover {
-    color: inherit;
-    background-color: #f6f6f6;
+   
+    background-color: #f6f6f694;
     text-decoration: none;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -42,9 +42,12 @@
     height: 100vh;
     padding: 10px 0 0;
 
-    text-align :left;
+    text-align :center;
+    color:#8e8e8e;;
 
     background: white;
+   
+    backdrop-filter: blur(7px);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
   }
@@ -57,7 +60,7 @@
     white-space: nowrap;
       color: inherit;
       padding:10px;
-      font-weight:400;
+      font-weight:500;
       letter-spacing: 1px;
       text-decoration: none;
       margin: 0 15px;
@@ -65,16 +68,37 @@
       text-transform: uppercase;
       letter-spacing: 0.01em;
       font-family: "Montserrat";
-      font-size: 0.9em;
+      font-size: 1.2em;
       
   }
 
 
   /* And let's slide it in from the right */
   #topnav_responsive_menu.open {
-    transform:scale(1);
-    position: fixed;
+    
+    position:fixed;
+    animation:.5s slideRight ease-in forwards; transition-delay:0;
+    animation:1s slideLeft ease-out forwards; transition-delay:0;
   }
+
+
+/* Animations pour le menu slide */
+@keyframes slideRight {
+	from {left:25%;}
+	to {left:0%;}
+}
+@-webkit-keyframes slideRight {
+	from {left:25%;}
+	to {left:0%;}
+}
+@keyframes slideLeft {
+	from {left:-25%;}
+	to {left:0%;}
+}
+@-webkit-keyframes slideLeft {
+	from {left:-25%;}
+	to {left:0%;}
+}
 
   /* ******************** HAMBURGER ICON ******************** */
   /* define size and position of the hamburger link */
@@ -207,27 +231,26 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    /* margin: 20px; */
-    top: 0;
-    min-width: 50vw;
-    height: 48vh;
-    padding: 0px 0 0;
-    text-align :left;
+    margin-top: -12px;
+    text-align :center;
+    min-width: 138vw;
+    color:#8e8e8e;
+    line-height: 8vh;
+    height: 65vh;
     background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
   }
-
+  
   #topnav_responsive_menu li {
-    padding: 25px 35px;
+    padding: 25px 15px 10px 0px;
     font-size: x-large;
   }
 
   #topnav_responsive_menu a {
     white-space: nowrap;
     color: inherit;
-    padding:10px;
-    font-family: "Montserrat";
+    font-family:"Montserrat";
     font-weight:400;
     letter-spacing: 1px;
     text-decoration: none;
@@ -336,3 +359,45 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (max-width: 361px)  {
+  #topnav_responsive_menu {
+    display: block;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 153px;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 99;
+
+    transform-origin: 0% 0%;
+    transform: initial;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  
+  #topnav_responsive_menu ul {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    margin: -12px;
+    
+    top: 0;
+    line-height: 6vh;
+    min-width: 140vw;
+    height: 58vh;
+    padding: 15px 0 0;
+
+    text-align :center;
+    color:#8e8e8e;;
+
+    background: white;
+   
+    backdrop-filter: blur(7px);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  }}
