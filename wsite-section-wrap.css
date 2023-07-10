@@ -69,11 +69,12 @@ line-height: 2;
 width: 70%;
 letter-spacing: 1px;
 
+
 }
 
 @media only screen and (max-width: 992px) {
     .wsite-image{
-        padding-top: 120px;
+        padding-top: 20vh;
         display: flex;
         justify-content: center;
         } 
@@ -99,22 +100,13 @@ letter-spacing: 1px;
 {
   display: flex;
   overflow: hidden;
-  width:480px;
+  margin-top: vh;
+  
   }
-    
-    .wsite-image{
-     
-display: flex;
-     
-/* padding-top: 123px; */
-     
-justify-content: center;
-     }
-
      .wsite-image{
       display: inline-flex;
       justify-content: center;
-      padding-top: 113px;
+    
       }
 
     .wsite-image1
