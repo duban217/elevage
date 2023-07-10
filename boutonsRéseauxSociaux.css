@@ -62,7 +62,7 @@
     font-family: 'Source Code Pro', monospace;
     display: inline-flex;
     height:10vh;
-    width: 480px;
+    width:100%;
     place-items: center;
     background: linear-gradient(to bottom left, #dad4ec, #f3e7e9);
     justify-content: center;
