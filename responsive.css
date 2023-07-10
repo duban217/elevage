@@ -4,13 +4,18 @@ body {
   font-size: 15px;
   color: #8e8e8e;
   min-height: 100%;
-  background: #f9f9f9;
+
+  background: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
+
+
 #header{text-align: center;
   margin-top: 30px;
 margin-bottom: 15px;
+
 }
 #wsite-title {
   font-family: M;
@@ -67,7 +72,6 @@ margin-bottom: 15px;
 
 #home_link{
   margin-left: auto;
-
 }
 .wsite-section-wrap
 {
@@ -88,7 +92,7 @@ margin-bottom: 15px;
 
 
 @media only screen and (max-width: 992px) {
-  /* hide classic menu */
+ 
  
   #header {
     padding: 0 10px;
@@ -125,6 +129,7 @@ margin-bottom: 15px;
   #root {
     position: relative;
     overflow-x: hidden;
+ 
   }
 
   .paragraph {
@@ -143,14 +148,23 @@ margin-bottom: 15px;
 
 @media only screen and (max-width: 480px) {
   /* hide classic menu */
+
+html, body{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  
+}
  
   #header {
-    padding: 20px 10px;
+    padding: 3vh 10px;
     border-bottom: solid 1px #d0d0d0;
-    height: 120px;
+    height: 20vh;
     box-sizing: border-box;
     display: table;
-    width:100%;
+   
     position: fixed;
     margin-top: 0;
     left: 0;
@@ -166,6 +180,7 @@ margin-bottom: 15px;
 .wsite-logo {
   margin: 3px 54px 0 0;
 }
+
   #topnav_menu {
     display: none;
   }
@@ -180,20 +195,18 @@ margin-bottom: 15px;
   #root {
     position: relative;
     overflow-x: hidden;
+   
+
   }
 
   .paragraph {
-    padding-top: 40px;
-    width: 120%;
+   
+    width: 100%;
     font-size: 1.2em !important;
     line-height: 1.7em !important;
-    margin: auto;
-    /* justify-content: center; */
-    display: inline-block;
+   margin:0;
+   padding:0;
   }
-
-
-
 .wsite-logo a {
   color: #484848;
   font-family: 'Raleway';
