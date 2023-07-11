@@ -105,6 +105,7 @@ margin-bottom: 15px;
     background: #ffffff;
     z-index: 11;
 }
+
   .nav-trigger {
     display: table-cell;
     vertical-align: middle;
@@ -156,18 +157,26 @@ html, body{
 }
 
   #header {
-    padding: 3vh 10px;
-    border-bottom: solid 1px #d0d0d0;
-    height: 20vh;
+    padding: 3vh 0;
     box-sizing: border-box;
     display: table;
     position: fixed;
     margin-top: 0;
     left: 0;
     background: #ffffff;
-    z-index: 11;
-    padding-bottom: 30px;
+ 
 }
+#wsite-title {
+  font-family: M;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  color: #76b3b8;
+  text-transform: none;
+  letter-spacing: 3px;
+  text-align: justify;
+  padding-inline: 5px;}
+
   .nav-trigger {
     display: table-cell;
     vertical-align: middle;
@@ -205,7 +214,7 @@ html, body{
   color: #484848;
   font-family: 'Raleway';
   font-weight: 500;
-  font-size: 25px;
+  font-size: 15px;
   text-transform: none;
   text-decoration-line: none;}
 }
