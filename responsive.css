@@ -158,7 +158,6 @@ html, body{
 
   #header {
     padding: 3vh 0;
-    box-sizing: border-box;
     display: table;
     position: fixed;
     margin-top: 0;
@@ -168,23 +167,18 @@ html, body{
 }
 #wsite-title {
   font-family: M;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   font-style: italic;
   color: #76b3b8;
   text-transform: none;
   letter-spacing: 3px;
   text-align: justify;
-  padding-inline: 5px;}
+  padding-inline: 3px;
+}
 
-  .nav-trigger {
-    display: table-cell;
-    vertical-align: middle;
-    width: 24px;
-}
-.wsite-logo {
-  margin: 3px 54px 0 0;
-}
+
+
 
   #topnav_menu {
     display: none;
@@ -210,13 +204,7 @@ html, body{
    margin:0;
    padding:0;
   }
-.wsite-logo a {
-  color: #484848;
-  font-family: 'Raleway';
-  font-weight: 500;
-  font-size: 15px;
-  text-transform: none;
-  text-decoration-line: none;}
+
 }
 
 
