@@ -162,12 +162,13 @@ html, body{
     position: fixed;
     margin-top: 0;
     left: 0;
+    right:0;
     background: #ffffff;
  
 }
 #wsite-title {
   font-family: M;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   font-style: italic;
   color: #76b3b8;
