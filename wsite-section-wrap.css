@@ -107,7 +107,7 @@ letter-spacing: 1px;
 {
   display: flex;
   overflow: hidden;
-  margin-top: 3vh;
+  margin-top: 0;
   
   }
      .wsite-image{
@@ -116,14 +116,14 @@ letter-spacing: 1px;
       }
 
     .wsite-image1
-    {margin:auto;}
+    {margin:0;}
      
     .img 
     {
-      width: 110%;
+      width: 100%;
       height:auto;
       padding:0;
-      margin-top:10px;
+      margin-top:0;
       }
      .paragraphLegendePhoto {
       
