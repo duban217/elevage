@@ -202,8 +202,7 @@
   /* show responsive menu and position at the right of the screen */
   #topnav_responsive_menu {
     display: block;
-   
-    
+    margin: auto;
     right: 0;
     top: 17vh;
     width: 100vw;
@@ -229,9 +228,10 @@
     position: absolute;
     margin-top : 46px;
     text-align :center;
+    padding-top:0;
     width:100%;
     color:#8e8e8e;
-    line-height: 6vh;
+    line-height: vh;
     height: 100%;
     background: white;
     list-style-type: none;
@@ -239,7 +239,7 @@
   }
   
   #topnav_responsive_menu li {
-    padding: 30px 15px 10px 0px;
+    padding: 35px 15px 10px 0px;
     font-size:larger;
   }
 
