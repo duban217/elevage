@@ -4,11 +4,9 @@ body {
   font-size: 15px;
   color: #8e8e8e;
   min-height: 100%;
-
   background: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
 }
 
 
@@ -101,7 +99,7 @@ margin-bottom: 15px;
     box-sizing: border-box;
     display: table;
     width: 100%;
-    position: fixed;
+    overflow: hidden;
     top: 0;
     left: 0;
     background: #ffffff;
@@ -150,21 +148,19 @@ margin-bottom: 15px;
   /* hide classic menu */
 
 html, body{
-  position:fixed;
   top:0;
   bottom:0;
   left:0;
   right: 0;
-  
+  overflow-x: hidden;
 }
- 
+
   #header {
     padding: 3vh 10px;
     border-bottom: solid 1px #d0d0d0;
     height: 20vh;
     box-sizing: border-box;
     display: table;
-   
     position: fixed;
     margin-top: 0;
     left: 0;
@@ -195,8 +191,6 @@ html, body{
   #root {
     position: relative;
     overflow-x: hidden;
-   
-
   }
 
   .paragraph {
