@@ -202,18 +202,14 @@
   /* show responsive menu and position at the right of the screen */
   #topnav_responsive_menu {
     display: block;
-    position: absolute;
-    margin: 0;
+   
+    
     right: 0;
-    top: 18vh;
+    top: 20vh;
     width: 100vw;
     height: 100vh;
-
-    z-index: 99;
-
     transform-origin: 0% 0%;
     transform: initial;
-
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
@@ -264,7 +260,7 @@
   /* And let's slide it in from the right */
   #topnav_responsive_menu.open {
     transform: none;
-    position: fixed;
+   overflow: hidden;
   }
 
   /* ******************** HAMBURGER ICON ******************** */
@@ -359,4 +355,3 @@
     transform: rotate(-45deg);
   }
 }
-
