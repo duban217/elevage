@@ -157,6 +157,11 @@ width: 100%;
 font-size: 1.2em !important;
 line-height: 1.7em !important;
   }
+.affichageVideos{
+ 
+  display:flex;
+  padding:20px 10px 20px 10px;
+}
   }
 
      
