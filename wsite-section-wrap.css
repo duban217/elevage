@@ -74,7 +74,7 @@ letter-spacing: 1px;
 
 @media only screen and (max-width: 992px) {
     .wsite-image{
-        padding-top: 20vh;
+        padding-top: 16vh;
         display: flex;
         justify-content: center;
         } 
