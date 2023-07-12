@@ -200,7 +200,7 @@ html, body{
   .paragraph {
    
     width: 100%;
-    font-size: 1.2em !important;
+    font-size: 1em;
     line-height: 1.7em !important;
    margin:0;
    padding:0;
