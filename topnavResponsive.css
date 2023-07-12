@@ -1,4 +1,4 @@
-@media only screen and (max-width: 992px)  {
+    @media only screen and (max-width: 992px)  {
   
 
   /* show responsive menu and position at the right of the screen */
@@ -204,7 +204,7 @@
     display: block;
     margin: auto;
     right: 0;
-    top: 17vh;
+    top: 13vh;
     width: 100vw;
     height: 100vh;
     transform-origin: 0% 0%;
@@ -355,3 +355,4 @@
     transform: rotate(-45deg);
   }
 }
+
