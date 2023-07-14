@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="wsite-section-wrap.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="topnav.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="topnavResponsive.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="carrousel.css" type="text/css" media="screen"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
@@ -124,17 +125,64 @@
   <br> Disponibilité : mi-juillet 2023.
 </div>
 
-  <!--Image Nouveaux chiots-->
-  <div class="wsite-image1">
-    <a href="javascript:display_photo('photoChiotRenouv1.jpg','710','575')">
-      <img src="photoChiotRenouv1.jpg" class="img"></a>
-      <a href="javascript:display_photo('photoChiotRenouv1.jpg','710','575')">
-        <img src="photoChiotRenouv1.jpg" class="img"></a>
+ <!--CARROUSEL-->
+ <div id="carrousel">
+  <div id="containerSlides"></div>
+  <a class="bouton" id="g">&#10094;</a>
+  <a class="bouton" id="d">&#10095;</a>
   
+ </div>
+
+ <script type="text/javascript">
+  document.body.onload=function(){
+    nbr=5;
+    p=0;
+    containerSlides=document.getElementById("containerSlides");
+    g=document.getElementById("g");
+    d=document.getElementById("d");
+    containerSlides.style.width=(300*nbr)+"px";
     
+    for(i=1;i<=nbr;i++)
+    {
+      div=document.createElement("div");
+      div.className="photo";
+      div.style.backgroundImage="url('im"+i+".jpg')";
+      containerSlides.appendChild(div);
+    }
+    afficherMasquer();
+  }
+  g.onclick=function(){
+    if(p>-nbr+1)
+      p--;
+      containerSlides.style.transform="translate("+p*300+"px)";
+      containerSlides.style.transition="all 0.5s ease";
       
-  </div>
-  
-  
-      
+    afficherMasquer();
+  }
+  d.onclick=function(){
+    if(p<0)
+      p++;
+    containerSlides.style.transform="translate("+p*300+"px)";
+    containerSlides.style.transition="all 0.5s ease";
+    afficherMasquer();
+
+  }
+  function afficherMasquer()
+  {
+    if (p==-nbr+1)
+    {
+      g.style.visibility="visible";
+    }
+    else{
+      g.style.visibility="hidden";
+    }
+    if(p=0)
+    {
+      d.style.visibility="hidden";
+    }
+    else{
+      d.style.visibility="visible";
+    }
+  }
+ </script>
   </body>
