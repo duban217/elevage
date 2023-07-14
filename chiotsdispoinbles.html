@@ -122,7 +122,7 @@
   Les bébés d'Opale sont nés!
   <br> Chiots poils longs.
   <br> Réservation possible sur cette portée (mâles et femelles).
-  <br> Disponibilité : mi-juillet 2023.
+  <br> Disponibilité : fin juillet 2023.
 </div>
 
  <!--CARROUSEL-->
@@ -130,7 +130,6 @@
   <div id="containerSlides"></div>
   <a class="bouton" id="g">&#10094;</a>
   <a class="bouton" id="d">&#10095;</a>
-  
  </div>
 
  <script type="text/javascript">
@@ -142,47 +141,28 @@
     d=document.getElementById("d");
     containerSlides.style.width=(300*nbr)+"px";
     
-    for(i=1;i<=nbr;i++)
+    for(let i=1;i<=nbr;i++)
     {
-      div=document.createElement("div");
+      let div=document.createElement("div");
       div.className="photo";
       div.style.backgroundImage="url('im"+i+".jpg')";
       containerSlides.appendChild(div);
+    }}
+    function translate(){
+      containerSlides.style.transform="translate("+(-300*p)+"px)";
     }
-    afficherMasquer();
-  }
+  
   g.onclick=function(){
-    if(p>-nbr+1)
+    if((p<=nbr) && (p>0))
       p--;
-      containerSlides.style.transform="translate("+p*300+"px)";
-      containerSlides.style.transition="all 0.5s ease";
-      
-    afficherMasquer();
+      translate();
+      containerSlides.style.transition="all 0.5s ease";  
   }
   d.onclick=function(){
-    if(p<0)
+    if(p<=nbr-2)
       p++;
-    containerSlides.style.transform="translate("+p*300+"px)";
-    containerSlides.style.transition="all 0.5s ease";
-    afficherMasquer();
-
-  }
-  function afficherMasquer()
-  {
-    if (p==-nbr+1)
-    {
-      g.style.visibility="visible";
-    }
-    else{
-      g.style.visibility="hidden";
-    }
-    if(p=0)
-    {
-      d.style.visibility="hidden";
-    }
-    else{
-      d.style.visibility="visible";
-    }
+      translate();
+      containerSlides.style.transition="all 0.5s ease";
   }
  </script>
   </body>
