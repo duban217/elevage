@@ -138,7 +138,7 @@
     {
       let div=document.createElement("div");
       div.className="photo";
-      div.style.backgroundImage="url('images/im"+i+".jpg')";
+      div.style.backgroundImage="url('im"+i+".jpg')";
       containerSlides.appendChild(div);
     }}
     function translate(){
@@ -160,13 +160,19 @@
       afficherMasquer();
   }
   function afficherMasquer(){
-    if(p==nbr-1)
-    {g.style.visibility="visible";
-     d.style.visibility="hidden";}
+    if(p==(-1+nbr))
+    {d.style.visibility="hidden";
+    g.style.visibility="visible";
+     }
 
   if(p==0)
     {d.style.visibility="visible";
      g.style.visibility="hidden";}
+
+  if ((p<nbr-1) && (p>0)){
+    d.style.visibility="visible";
+    g.style.visibility="visible";
+  }
   }
  </script>
 
