@@ -136,12 +136,13 @@
 
  <script type="text/javascript">
   document.body.onload=function(){
-    nbr=5;
+    nbr=6;
     p=0;
     containerSlides=document.getElementById("containerSlides");
     g=document.getElementById("g");
     d=document.getElementById("d");
     containerSlides.style.width=(300*nbr)+"px";
+    afficherMasquer();
     
     for(let i=1;i<=nbr;i++)
     {
@@ -158,13 +159,24 @@
     if((p<=nbr) && (p>0))
       p--;
       translate();
-      containerSlides.style.transition="all 0.5s ease";  
+      containerSlides.style.transition="all 0.5s ease";
+      afficherMasquer();
   }
   d.onclick=function(){
     if(p<=nbr-2)
       p++;
       translate();
       containerSlides.style.transition="all 0.5s ease";
+      afficherMasquer();
+  }
+  function afficherMasquer(){
+    if(p==nbr-1)
+    {g.style.visibility="visible";
+     d.style.visibility="hidden";}
+
+  if(p==0)
+    {d.style.visibility="visible";
+     g.style.visibility="hidden";}
   }
  </script>
   </body>
