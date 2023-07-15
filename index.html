@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="wsite-section-wrap.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="topnav.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="topnavResponsive.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="carrousel.css" type="text/css" media="screen"/>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
@@ -120,6 +121,12 @@
 
 </div> <!--FIN DIV BOUTONS RESEAUX-->
 
+<!--Paragraphe Chiots d'Opale-->
+<div class="paragraphNaissances">
+  Les bébés d'Opale sont nés!
+  <br> Disponibilité : fin juillet 2023. <br> <br>
+  
+</div>
 <div class="paragraph">
 Nous sommes situés dans les Landes
 <br>
@@ -130,22 +137,61 @@ Contactez-nous au 06 24 39 09 52 ou par
 <br>e-mail: 
 <a href="mailto:leboisblanc@free.fr">leboisblanc@free.fr</a>
 <br> SIRET: 498 223 023 00025
-<br> Eleveur ACACED.
+<br> Eleveur ACACED.<br> <br>
 </div>
+  <!--Carrousel chiens-->
+<!--CARROUSEL-->
+<div id="carrousel">
+  <div id="containerSlides"></div>
+  <a class="bouton" id="g">&#10094;</a>
+  <a class="bouton" id="d">&#10095;</a>
+ </div>
 
-
-<!--Paragraphe Chiots d'Opale-->
-<div class="paragraphNaissances">
-  Les bébés d'Opale sont nés!
-  <br> Disponibilité : mi-juillet 2023.
-</div>
-
-
-  <!--Image Nouveaux chiots-->
-<div class="wsite-image1">
-  <a href= "vignetteChiot.jpg" class="img"><img src="photoChiotRenouv1.jpg"/></a>
+ <script type="text/javascript">
+  document.body.onload=function(){
+    nbr=6;
+    p=0;
+    containerSlides=document.getElementById("containerSlides");
+    g=document.getElementById("g");
+    d=document.getElementById("d");
+    containerSlides.style.width=(300*nbr)+"px";
+    afficherMasquer();
     
-</div>
+    for(let i=1;i<=nbr;i++)
+    {
+      let div=document.createElement("div");
+      div.className="photo";
+      div.style.backgroundImage="url('diapo/diapo"+i+".jpg')";
+      containerSlides.appendChild(div);
+    }}
+    function translate(){
+      containerSlides.style.transform="translate("+(-300*p)+"px)";
+    }
+  
+  g.onclick=function(){
+    if((p<=nbr) && (p>0))
+      p--;
+      translate();
+      containerSlides.style.transition="all 0.5s ease";
+      afficherMasquer();
+  }
+  d.onclick=function(){
+    if(p<=nbr-2)
+      p++;
+      translate();
+      containerSlides.style.transition="all 0.5s ease";
+      afficherMasquer();
+  }
+  function afficherMasquer(){
+    if(p==nbr-1)
+    {g.style.visibility="visible";
+     d.style.visibility="hidden";}
+
+  if(p==0)
+    {d.style.visibility="visible";
+     g.style.visibility="hidden";}
+  }
+ </script>
 
 
 </body>
