@@ -161,7 +161,7 @@ Contactez-nous au 06 24 39 09 52 ou par
     {
       let div=document.createElement("div");
       div.className="photo";
-      div.style.backgroundImage="url('diapo"+i+".jpg')";
+      div.style.backgroundImage="url('diapo/diapo"+i+".jpg')";
       containerSlides.appendChild(div);
     }}
     function translate(){
@@ -183,13 +183,19 @@ Contactez-nous au 06 24 39 09 52 ou par
       afficherMasquer();
   }
   function afficherMasquer(){
-    if(p==nbr-1)
-    {g.style.visibility="visible";
-     d.style.visibility="hidden";}
+    if(p==(-1+nbr))
+    {d.style.visibility="hidden";
+    g.style.visibility="visible";
+     }
 
   if(p==0)
     {d.style.visibility="visible";
      g.style.visibility="hidden";}
+
+  if ((p<nbr-1) && (p>0)){
+    d.style.visibility="visible";
+    g.style.visibility="visible";
+  }
   }
  </script>
 
