@@ -8,18 +8,17 @@
     <link rel="stylesheet" href="topnav.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="topnavResponsive.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="carrousel.css" type="text/css" media="screen"/>
+   
+    <link rel="stylesheet" href="boutonsRéseauxSociaux.css" type="text/css" media="screen"/>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="boutonsRéseauxSociaux.css" type="text/css" media="screen"/>
 
     <meta name="viewport" content="width=device-width",initial-scale=0.86,maximum-scale=5.0, minimum-scale=0.86>
     <script src="javascript.js"></script>
-  
-    
     <title> siteElevage </title>
     
 </head>
@@ -51,7 +50,6 @@
 
     <!-- Classic Menu -->
     <nav role="navigation" id="topnav_menu">
-      <li>
      
       <a class="topnav_link" href="lelevage.html">L'&Eacute;LEVAGE</a>
       <a class="topnav_link" href="nosChiens.html">NOS CHIENS</a>
@@ -66,14 +64,22 @@
     <nav role="navigation" id="topnav_responsive_menu">
       <ul>
         <li><a href="index.html">ACCUEIL</a></li>
-        <li><a href="lelevage.html">L'&Eacute;LEVAGE</a></li>
+        <li>
+          <input id="btn"type="checkbox"/>
+          <label for="btn">L'&Eacute;LEVAGE  + </label>
+          <ul>
+            <li><a href="lelevage.html">Mode de vie</a></li>
+            <li><a href="#">Activités</a></li>
+            <li><a href="#">Alimentation</a></li>
+          </ul>                
+        </li>
+
         <li><a href="nosChiens.html">NOS CHIENS</a></li>
         <li><a href="chiotsdispoinbles.html">CHIOTS DISPONIBLES</a></li>
-       <li><a href="videos.html">VID&Eacute;OS</a></li> 
+        <li><a href="videos.html">VID&Eacute;OS</a></li> 
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
-
   </div>
 </div>
 
@@ -161,7 +167,7 @@ Contactez-nous au 06 24 39 09 52 ou par
     {
       let div=document.createElement("div");
       div.className="photo";
-      div.style.backgroundImage="url('diapo"+i+".jpg')";
+      div.style.backgroundImage="url('diapo/diapo"+i+".jpg')";
       containerSlides.appendChild(div);
     }}
     function translate(){
