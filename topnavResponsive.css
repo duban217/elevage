@@ -230,12 +230,6 @@
     padding: 20px 15px 10px 0px;
     font-size:larger;
     position:relative;
-
-    #topnav_responsive_menu li.open {
-      
-    }
-
-  
   }
   #topnav_responsive_menu li label{
     padding: 20px 15px 10px 24px;
