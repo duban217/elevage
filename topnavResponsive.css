@@ -1,4 +1,4 @@
-@media only screen and (max-width: 992px)  {
+@media only screen and (max-width: 1310px)  {
   
 
   /* show responsive menu and position at the right of the screen */
@@ -7,15 +7,15 @@
     position: absolute;
     margin: 0;
     left: 0;
-    top: 155px;
+    top: 120px;
     width: 100vw;
     height: 100vh;
     transform-origin: 0% 0%;
   }
 
-  #topnav_responsive_menu li:hover {
+  #topnav_responsive_menu ul li:hover {
    
-    background-color: #f6f6f670;
+    
     text-decoration: none;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -27,37 +27,77 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin: 0;
+    margin:0;
     top: 0;
     min-width: 50vw;
     height: 100vh;
-    padding: 10px 0 0;
     text-align :left;
     color:#8e8e8e;;
     background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
+    font-size: small;
+    letter-spacing: 0.02em;
+    font-family: "Montserrat";
   }
 
   #topnav_responsive_menu li {
-    padding: 12px 24px;
+    padding: 30px 15px 10px 0px;
+    font-size:larger;
+    position:relative;
+    margin:0;
+
   }
 
   #topnav_responsive_menu a {
     white-space: nowrap;
       color: inherit;
       padding:10px;
-      font-weight:500;
-      letter-spacing: 1px;
+      font-weight:400;
       text-decoration: none;
-      margin: 0 15px;
-      font-size: 0.9em;
       text-transform: uppercase;
-      letter-spacing: 0.01em;
-      font-family: "Montserrat";
-      font-size: 1.2em;
       
+    
   }
+  #topnav_responsive_menu li label{
+   padding-left:10px;
+    letter-spacing: 1px;
+    
+   
+    
+  }
+  #topnav_responsive_menu li ul a{
+  
+    position:relative;
+   
+  }
+ 
+  
+  #topnav_responsive_menu li ul {display:none;}
+  #topnav_responsive_menu li input{display:none;}
+  #topnav_responsive_menu li input:checked~ul {
+    display:block;
+    position:relative;
+    height:10vh;
+  
+  }
+  #topnav_responsive_menu li input:checked~ul li {
+    padding: 20px 10px 0 20px;
+    position:relative;
+    margin-top:0;
+  }
+ 
+  
+  #topnav_responsive_menu li input:checked~ul li a {
+    position:relative;
+    padding-left: 10px;
+  }
+  #topnav_responsive_menu li label{
+cursor:pointer;
+  }
+  #topnav_responsive_menu li label:after{display:block;}
+  #topnav_responsive_menu li input:checked~label:after{content:'';}
+
 
 
   /* And let's slide it in from the right */
@@ -65,7 +105,7 @@
     
     position:fixed;
     animation:.5s slideRight ease-in forwards; transition-delay:0;
-    animation:1s slideLeft ease-out forwards; transition-delay:0;
+    animation:0.7s slideLeft ease-out forwards; transition-delay:0;
   }
 
 
@@ -79,7 +119,7 @@
 	to {left:0%;}
 }
 @keyframes slideLeft {
-	from {left:-25%;}
+	from {left:-100%;}
 	to {left:0%;}
 }
 @-webkit-keyframes slideLeft {
@@ -191,7 +231,7 @@
     display: block;
     margin: auto;
     right: 0;
-    top: 13vh;
+    top: 10vh;
     width: 100vw;
     height: 100vh;
     transform-origin: 0% 0%;
@@ -213,38 +253,33 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    margin-top : 46px;
     text-align :left;
-    padding-top:0;
     width:100%;
     color:#8e8e8e;
-    line-height: vh;
+   
     height: 100%;
     background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     position:relative;
+    font-size: small;
+    letter-spacing: 0.02em;
+    font-family: "Montserrat";
+    margin-top:7vh;
+    padding-left:6vw;
   }
   
   #topnav_responsive_menu li {
-    padding: 20px 15px 10px 0px;
-    font-size:larger;
+    padding: 40px 0px 10px 0px;
     position:relative;
+
   }
   #topnav_responsive_menu li label{
-    padding: 20px 15px 10px 24px;
-    font-size:larger;
+    
     position:relative;
-    margin:auto;
     letter-spacing: 1px;
   }
-  #topnav_responsive_menu li ul a{
-    padding: 20px 15px 10px 0px;
-    font-size:larger;
-    position:relative;
-  }
  
-  
   #topnav_responsive_menu li ul {display:none;}
   #topnav_responsive_menu li input{display:none;}
   #topnav_responsive_menu li input:checked~ul {
@@ -252,17 +287,11 @@
     margin-top:0;
   }
   #topnav_responsive_menu li input:checked~ul li {
-    padding: 15px 15px 10px 25px;
     position:relative;
     margin-top:0;
+    padding-top:4vh;
   }
-  #topnav_responsive_menu li input:checked~ul li a {
-    
-    font-size: 1em;
-    letter-spacing: 0.02em;
-    font-family: "Montserrat";
-    
-  }
+  
   #topnav_responsive_menu li label{cursor:pointer;}
   #topnav_responsive_menu li label:after{display:block;}
   #topnav_responsive_menu li input:checked~label:after{content:'';}
