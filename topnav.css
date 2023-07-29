@@ -1,31 +1,31 @@
 
-  
+#topnav_menu{
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  width: 1300px;
+}
+ 
  #topnav_menu ul{
     margin-top:5vh;
-   
  }
  
  #topnav_menu ul li{
-    display:inline-block;
-    align-items: center;
+    display:inline-flex;
     color :#484848;
     list-style-type: none;
     letter-spacing: 1px;
-  }
-  #topnav_menu ul:hover{
+    padding-right: 30px;
     
-    text-decoration: none;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;}
+  }
+
 
   #topnav_menu ul li a{
     font-family: "Montserrat";
     letter-spacing: 1px; 
     text-decoration: none;
     color :#484848;
-    padding:10px 40px 15px 60px;
+    
     margin:auto;
     
   }
@@ -37,19 +37,25 @@
     #topnav_menu ul ul{
       position:absolute;
       padding-left: 0;
+      padding-top: 3vh;
       height: 130px;
       overflow:hidden;
       margin-top: 15px;
+      width:10vw;
       
     }
-    
-    
-    
+    #topnav_menu ul ul:hover{
+      background-color: transparent;
+       }
+       #topnav_menu ul ul li a:hover{
+        background-color: transparent;
+         }
+       
     #topnav_menu ul ul li{
       display:none;
       overflow:hidden; 
       background-color:#f6f6f6e0;
-      padding:3vh 0 3vh 0;
+      padding:3vh 0 3vh 1vh;
       width:227.5px;
     }
 
