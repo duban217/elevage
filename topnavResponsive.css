@@ -241,7 +241,7 @@ cursor:pointer;
 
   #topnav_responsive_menu li:hover {
     color: inherit;
-    background-color: #f6f6f6;
+    background-color: white;
     text-decoration: none;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
