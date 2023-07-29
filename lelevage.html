@@ -24,6 +24,8 @@
     
 </head>
 <body class="header-page wsite-page-index full-width-on wsite-theme-light" >
+  <script src="jquery.js"></script>
+
   <div id="header" onclick="showResponsiveMenu()">
     
       <div class="nav-trigger hamburger">
@@ -34,26 +36,39 @@
         <span></span>
       </a>
       </div>
+      
       <div id="sitename">
       <span class="wsite-logo">
           <a href="index.html">
-              <span id="wsite-title" >&Eacute;levage de Berger Blanc Suisse de l'Orée du Bois Blanc</span>
+              <span id="wsite-title" >&Eacute;levage de Berger Blanc Suisse de L'Orée des Sapins Blancs</span>
           </a>
       </span> 
       </div>
   </div>
 
 <div id="root">
-  <div id="topnav" class="topnav">
-    <a id="home_link" class="topnav_link" href="index.html">ACCUEIL</a>
-
-    <!-- Classic Menu -->
     <nav role="navigation" id="topnav_menu">
-      <a class="topnav_link" href="lelevage.html">L'&Eacute;LEVAGE</a>
-      <a class="topnav_link" href="nosChiens.html">NOS CHIENS</a>
-      <a class="topnav_link" href="chiotsdispoinbles.html">CHIOTS DISPONIBLES</a>
-      <a class="topnav_link" href="videos.html">VID&Eacute;OS</a>
-      <a class="topnav_link" href="contact.html">CONTACT</a>
+     <ul>
+      <li><a href="index.html">ACCUEIL</a></li>
+      <li><a href="lelevage.html">L'&Eacute;LEVAGE</a></li>
+
+      <li id="sousMenu" onmouseenter="toggle()" onmouseleave="toggle()"> <a>NOS CHIENS &#x23F7</a>
+        <ul>
+          <li id="s1"><a href="nosFemelles.html">Nos femelles</a></li>
+          <li id="s2"><a href="nosChiens.html">Nos mâles</a></li>
+      <script>
+          function toggle() {
+              $( "#s1" ).toggle();
+              $( "#s2" ).toggle();}
+
+      </script>
+        </ul></li>            
+
+      <li><a href="chiotsdispoinbles.html">CHIOTS DISPONIBLES</a></li>
+      <li><a href="videos.html">VID&Eacute;OS</a></li> 
+      <li><a href="contact.html">CONTACT</a></li>
+     </ul>
+      
       
     </nav>
 
@@ -63,11 +78,19 @@
       <ul>
         <li><a href="index.html">ACCUEIL</a></li>
         <li><a href="lelevage.html">L'&Eacute;LEVAGE</a></li>
-        <li><a href="nosChiens.html">NOS CHIENS</a></li>
+
+        <li>
+          <input id="btn"type="checkbox"/>
+          <label for="btn">NOS CHIENS  &#x23F7 </label>
+          <ul>
+            <li><a href="nosChiens.html">Nos mâles</a></li>
+            <li><a href="nosFemelles.html">Nos femelles</a></li>
+          </ul>                
+        </li>
+
         <li><a href="chiotsdispoinbles.html">CHIOTS DISPONIBLES</a></li>
-        <li><a href="videos.html">VID&Eacute;OS</a></li>
+        <li><a href="videos.html">VID&Eacute;OS</a></li> 
         <li><a href="contact.html">CONTACT</a></li>
-        
       </ul>
     </nav>
   </div>
