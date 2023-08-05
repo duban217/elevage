@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html"charset="UTF-8">
+    <link rel="stylesheet" href="responsive.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="wsite-section-wrap.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="topnav.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="topnavResponsive.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="carrousel.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="boutonsRéseauxSociaux.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="mur.css" type="text/css" media="screen"/>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+
+    <meta name="viewport" content="width=device-width",initial-scale=0.86,maximum-scale=5.0, minimum-scale=0.86>
+    <script src="javascript.js"></script>
+    <script src="mur.js"></script>
+    <title> siteElevage </title>
+    
+</head>
+<body>
+
+    <!--CARROUSEL-->
+
+<div id="carrouselMur">
+    <div id="containerSlidesMur"></div>
+    <a class="bouton" id="g">&#10094;</a>
+    <a class="bouton" id="d">&#10095;</a>
+   </div>
+    <script type="text/javascript">
+        document.body.onload=function(){
+          nbr=12;
+          p=0;
+          containerSlidesMur=document.getElementById("containerSlidesMur");
+          g=document.getElementById("g");
+          d=document.getElementById("d");
+          containerSlidesMur.style.width=(410*nbr)+"px";
+          afficherMasquer();
+          
+          for(let i=1;i<=nbr;i++)
+          {
+            let div=document.createElement("div");
+            div.className="photoMur";
+            div.style.backgroundImage="url('mur/mur"+i+".jpg')";
+            containerSlidesMur.appendChild(div);
+          }}
+          function translate(){
+            containerSlidesMur.style.transform="translate("+(-410*p)+"px)";
+          }
+        
+        g.onclick=function(){
+          if((p<=nbr) && (p>0))
+            p--;
+            translate();
+            containerSlidesMur.style.transition="all 0.5s ease";
+            afficherMasquer();
+        }
+        d.onclick=function(){
+          if(p<=nbr-2)
+            p++;
+            translate();
+            containerSlidesMur.style.transition="all 0.5s ease";
+            afficherMasquer();
+        }
+        function afficherMasquer(){
+          if(p==(-1+nbr))
+          {d.style.visibility="hidden";
+          g.style.visibility="visible";
+           }
+      
+        if(p==0)
+          {d.style.visibility="visible";
+           g.style.visibility="hidden";}
+      
+        if ((p<nbr-1) && (p>0)){
+          d.style.visibility="visible";
+          g.style.visibility="visible";
+        }
+        }
+       </script>
+      </div>
+   
+</body>
