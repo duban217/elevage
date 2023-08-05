@@ -4,14 +4,30 @@
   overflow: hidden;
   }
 
+  .paragraph
+{
+  line-height:34px;
+  font-size: 1em !important;}
+
+  .paragraphNaissances{
+    text-align:justify;
+    margin:0 10px 0 120px;
+   
+    font-size: 18px;
+  line-height: 2.1em;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #777777;
+  letter-spacing: 1px;
+  }
+  
 .wsite-image{
     padding-top: 10px;
     padding-bottom: 20px;
     justify-content: center;
     max-width: 100%;
     }
-    
-  
+
   .img 
   {
     width:35%;
@@ -57,20 +73,7 @@ padding-top: 40px;
   display: flex;
 }
 
-.paragraphNaissances{
-  font-size: 18px;
-line-height: 2.1em;
-margin-left:auto;
-text-decoration: none;
-text-align: left;
-font-family: 'Raleway', sans-serif;
-color: #777777;
-line-height: 2;
-width: 70%;
-letter-spacing: 1px;
 
-
-}
 
 @media only screen and (max-width: 992px) {
     .wsite-image{
@@ -78,6 +81,11 @@ letter-spacing: 1px;
         display: flex;
         justify-content: center;
         } 
+
+     .paragraph {
+          font-size: 1em;
+          line-height: 1.7em !important;
+        }
     .paragraphLegendePhoto{text-decoration: none;
       padding-top: 50px;
       padding-bottom: 15px;
@@ -108,8 +116,17 @@ letter-spacing: 1px;
   display: flex;
   overflow: hidden;
   margin-top: 0;
-  
   }
+
+  .paragraphNaissances{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em !important;
+    line-height: 1.7em !important;
+    margin:0 15px 0 15px;
+    
+    
+      }
      .wsite-image{
       display: inline-flex;
       justify-content: center;
@@ -145,18 +162,6 @@ margin-left:60px;
   margin:30px;
   }
 
-  .paragraphNaissances{
-    
-padding:0;
-text-decoration: none;
-font-weight:bold;
-text-align:center;
-font-family: 'Raleway', sans-serif;
-width: 100%;
-font-size: 1.2em !important;
-line-height: 1.7em !important;
-margin-bottom: 0;
-  }
 .affichageVideos{
  
   display:flex;
