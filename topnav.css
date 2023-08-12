@@ -25,12 +25,13 @@
     letter-spacing: 1px; 
     text-decoration: none;
     color :#484848;
-    
+    padding:7px 22px 7px 22px;
     margin:auto;
     
   }
   #topnav_menu ul li a:hover{
     background-color: #f6f6f6e0;
+  
      }
    
   
@@ -41,7 +42,7 @@
       height: 130px;
       overflow:hidden;
       margin-top: 15px;
-      width:10vw;
+      width:11vw;
       
     }
     #topnav_menu ul ul:hover{
@@ -55,13 +56,14 @@
       display:none;
       overflow:hidden; 
       background-color:#f6f6f6e0;
-      padding:3vh 0 3vh 1vh;
+      padding:4vh 0px 3vh 12px;
       width:227.5px;
     }
 
     
     #topnav_menu ul ul li a{
       text-align: center;
+      
       
     }
   #s1 {display:none;
