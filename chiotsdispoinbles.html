@@ -156,71 +156,11 @@
   
   </div> <!--FIN DIV BOUTONS RESEAUX-->
   
- <!--CARROUSEL-->
- <div id="carrousel">
-  <div id="containerSlides"></div>
-  <a class="bouton" id="g">&#10094;</a>
-  <a class="bouton" id="d">&#10095;</a>
- </div>
-
- <script type="text/javascript">
-  document.body.onload=function(){
-    nbr=6;
-    p=0;
-    containerSlides=document.getElementById("containerSlides");
-    g=document.getElementById("g");
-    d=document.getElementById("d");
-    containerSlides.style.width=(300*nbr)+"px";
-    afficherMasquer();
-    
-    for(let i=1;i<=nbr;i++)
-    {
-      let div=document.createElement("div");
-      div.className="photo";
-      div.style.backgroundImage="url('images/im"+i+".jpg')";
-      containerSlides.appendChild(div);
-    }}
-    function translate(){
-      containerSlides.style.transform="translate("+(-300*p)+"px)";
-    }
-  
-  g.onclick=function(){
-    if((p<=nbr) && (p>0))
-      p--;
-      translate();
-      containerSlides.style.transition="all 0.5s ease";
-      afficherMasquer();
-  }
-  d.onclick=function(){
-    if(p<=nbr-2)
-      p++;
-      translate();
-      containerSlides.style.transition="all 0.5s ease";
-      afficherMasquer();
-  }
-  function afficherMasquer(){
-    if(p==(-1+nbr))
-    {d.style.visibility="hidden";
-    g.style.visibility="visible";
-     }
-
-  if(p==0)
-    {d.style.visibility="visible";
-     g.style.visibility="hidden";}
-
-  if ((p<nbr-1) && (p>0)){
-    d.style.visibility="visible";
-    g.style.visibility="visible";
-  }
-  }
- </script>
 
  <!--Paragraphe Chiots d'Opale-->
 <div class="paragraphNaissances" style="color:grey">
-  <br>Les bébés d'Opale sont nés!
-  <br> Chiots poils longs.
-  <br> Réservation possible sur cette portée (mâles et femelles).
-  <br> Disponibilité : fin juillet 2023.
-  <br>
+  Tous nos chiots ont été adoptés, mais contactez-nous pour les futures portées : 
+  vous serez prioritaires.
+  <br><br><br><br><br><br>
 </div>
   </body>
