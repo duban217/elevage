@@ -3,23 +3,22 @@
  
   
 
-#containerMur, #containerMur2, #containerMur3{
+#containerMur{
     padding:0;
      display:inline-flex;
      flex-flow: row;
      flex-wrap: wrap;
      max-width:1320px;
      justify-content: center;
-     margin-top: -20px;
+     
    }
-   #containerMur li img, #containerMur2 li img,  #containerMur3 li img
+   #containerMur li img
    {
      width:330px;
      height: 290px;
      object-fit:cover;
      overflow: hidden;
-    
-     
+     margin-bottom: -4px;
    }
    #container1{
      display: inline-flex;
