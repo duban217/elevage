@@ -269,12 +269,12 @@ cursor:pointer;
     font-size: small;
     letter-spacing: 0.02em;
     font-family: "Montserrat";
-    margin-top:6vh;
+    margin-top:0vh;
     padding-left:6vw;
   }
   
   #topnav_responsive_menu li {
-    padding: 45px 0px 10px 0px;
+    padding: 55px 0px 0px 0px;
     position:relative;
 
   }
