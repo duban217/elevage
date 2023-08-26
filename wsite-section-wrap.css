@@ -115,7 +115,9 @@ padding-top: 40px;
 {
   display: flex;
   overflow: hidden;
+  padding-top:0px;
   margin-top: 0;
+ 
   }
 
   .paragraphNaissances{
@@ -130,6 +132,8 @@ padding-top: 40px;
      .wsite-image{
       display: inline-flex;
       justify-content: center;
+      padding-top: 160px;
+      margin-top: 0;
       }
 
     .wsite-image1

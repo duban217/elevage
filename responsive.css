@@ -144,7 +144,7 @@ html, body{
 }
 
   #header {
-    padding: 3vh 0;
+    padding: 5vh 0;
     display: table;
     position: fixed;
     margin-top: 0;
@@ -155,7 +155,7 @@ html, body{
 }
 #wsite-title {
   font-family: M;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   font-style: italic;
   color: #76b3b8;
