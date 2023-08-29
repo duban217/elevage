@@ -11,10 +11,11 @@
 
 #carrouselMur{
     width:410px;
-    height:963px;
+    height:700px;
     overflow: hidden;
     position:relative;
     margin: auto;
+  
     
    
    
@@ -26,9 +27,9 @@
    
     
     }
- #containerSlidesMur{
-        width:410px;
-        height:963px;
+ #containerSlidesMur{ 
+        width:370px;
+        height:700px;
         
         }
 
@@ -36,7 +37,7 @@
     left:0;
     position :absolute;
     cursor:pointer;
-    top:450px;
+    top:350px;
     color:white;
     transform: translate(0,-50%);
     padding:16px;
@@ -49,7 +50,7 @@
     right:0;
     position:absolute;
     cursor:pointer;
-    top:450px;
+    top:350px;
     color:white;
     transform: translate(0,-50%);
     padding:16px;
@@ -73,10 +74,11 @@
 }
 
 .photoMur{ 
-    width:410px;
-    height:963px;
+    width:370px;
+    height:700px;
     display: inline-block;
     background-size: cover;
+   
 }
 @media only screen and (max-width: 480px) {
     
@@ -100,7 +102,7 @@
         right:65px;
         position:absolute;
         cursor:pointer;
-        top:450px;
+        top:350px;
         color:white;
         transform: translate(0,-50%);
         padding:16px;

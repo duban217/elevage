@@ -46,7 +46,7 @@
           containerSlidesMur=document.getElementById("containerSlidesMur");
           g=document.getElementById("g");
           d=document.getElementById("d");
-          containerSlidesMur.style.width=(410*nbr)+"px";
+          containerSlidesMur.style.width=(370*nbr)+"px";
           afficherMasquer();
 
           let position=localStorage.getItem("pos");
@@ -56,16 +56,20 @@
           { 
             let div=document.createElement("div");
             div.className="photoMur";
-            div.style.backgroundImage="url('mur"+i+".jpg')";
+            div.style.backgroundImage="url('mur/mur"+i+".jpg')"; 
+           
+           
+      
             containerSlidesMur.appendChild(div);
             if (i>nbr){
-              div.style.backgroundImage="url('mur"+(i-nbr)+".jpg')";
+              div.style.backgroundImage="url('mur/mur"+(i-nbr)+".jpg')";
+             
             containerSlidesMur.appendChild(div);
             }
 
           }}
           function translate(){
-            containerSlidesMur.style.transform="translate("+(-410*p)+"px)";
+            containerSlidesMur.style.transform="translate("+(-370*p)+"px)";
           }
         
         g.onclick=function(){
