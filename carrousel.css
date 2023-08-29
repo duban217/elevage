@@ -83,7 +83,7 @@
 @media only screen and (max-width: 480px) {
     
     #d{
-        right:35px;
+        right:0;
         position:absolute;
         cursor:pointer;
         top:350px;
@@ -94,12 +94,13 @@
         transition:all .3s;
         border-radius: 3px 0 0 3px;
     }
+    
 }
 
 @media only screen and (max-width: 365px) {
     
     #d{
-        right:65px;
+        right:25px;
         position:absolute;
         cursor:pointer;
         top:350px;
