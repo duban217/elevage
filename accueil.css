@@ -1,0 +1,108 @@
+*,::before ,::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+#containerLogo{
+    padding:10px;
+    
+}
+
+body{
+    font-family: Lato, Helvetica, sans-serif;
+    background: white;
+}
+.haut{
+    height:13vh;
+}
+
+.home{
+    height:25vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+h1{
+   
+    text-align:center;
+    font-size:25px;
+    color:rgb(40, 40, 40);
+    font-weight: 100;
+    line-height: 50px;
+    
+}
+h1 span{
+    font-size: 50px;
+    color:rgb(1, 98, 98);
+    font-weight:600;
+   
+
+}
+h1 #Bienvenue{
+    font-size: 50px;
+    color:rgb(1, 98, 98);
+    font-weight:300;
+}
+.nav-toggler{
+    position:fixed;
+    z-index:10;
+    top:30px;
+    right:30px;
+    height:50px;
+    width:50px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.line{
+    position: absolute;
+    display:block;
+    width:100%;
+    height: 2px;
+    background: rgb(40, 40, 40);
+    transition: transform 0.3s ease-out,opacity 0.1 ease-out;
+}
+.l1{
+    transform:translateY(-10px);
+}
+.l3{
+    transform:translateY(10px);
+}
+.nav-toggler.active .l1{
+    transform:translateY(0px)rotate(135deg);
+}
+.nav-toggler.active .l2{
+    opacity:0;
+}
+.nav-toggler.active .l3{
+    transform:translateY(0px)rotate(-135deg);
+}
+nav{
+    position:fixed;
+    width:100vw;
+    height: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f1f1f1;
+    border-bottom: 1px solid rgb(40, 40, 40);
+    transform:translateY(-100%);
+    transition:transform 0.3s cubic-bezier(0.73,0.11,0.67,0.84);
+}
+nav.active{
+    transform:translate(0);
+}
+nav a{
+    font-family: Quicksand,sans-serif;
+    color:rgb(40, 40, 40);
+    font-size: 20px;
+    display: block;
+    margin:10px 0;
+    text-decoration: none;
+}

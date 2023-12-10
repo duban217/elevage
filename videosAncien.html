@@ -25,12 +25,12 @@
     <link rel="stylesheet" href="footer.css"/>
      <link rel="stylesheet" href="popup.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="accueil.css" type="text/css" media="screen"/>
-
+    <link rel="stylesheet" href="galerieVideo.css" type="text/css" media="screen"/>
+    
     
     <meta name="viewport" content="width=device-width",initial-scale=0.86,maximum-scale=5.0, minimum-scale=0.86/>
-    
-    
-    <script src="mur.js"></script>
+   
+    <script src="resizeTwo.js"></script>
 
     <title> Elevage Bergers Blancs Suisses Landes Nouvelle Aquitaine </title>
 
@@ -59,35 +59,17 @@
     </section>
 
     <script src="accueil.js"></script>
-
-    <script>
-    window.onload=function(){
-      var sousTitre=document.querySelector("h1");
-      var titre=document.getElementById('titre');
-      var bienvenue=document.getElementById('Bienvenue');
-      var containerButton=document.querySelector('container-button');
-
-      if (window.matchMedia("(max-width:480px)").matches)
-      {
-        titre.style.fontSize="35px",
-        bienvenue.style.fontSize="35px",
-        sousTitre.style.fontSize="20px"
-      }
-    }
-    </script>
-    
-    
+   
     <!--BOUTON CHIOTS DISPONIBLES-->
     <div class="container-button">
     <button id="boutonChiotsDisponibles"> Chiots disponibles </button>
     <div id="popup-overlay">
       <div class="popup-content" style="font-weight: 200;">
-        <p>Les bébés d'Olympe et de Volt sont nés!
-          Deux femelles sont encore disponibles à la réservation : 
-        contactez-nous.<br><br>
+          <p>Les bébés de Tokyo et d'Alaska sont nés!
+          Contactez-nous pour réservation.<br><br>
           Les vidéos des chiots<a href="videos.html" style="color:rgb(246, 5, 137);text-decoration: none;"> ici</a><br><br>
           Les photos des chiots<a href="chiots-berger-blanc-suisse-Bordeaux-Pau-Bayonne-Nouvelle-Aquitaine-Landes.html" style="color:rgb(246, 5, 137);text-decoration: none;"> ici</a><br>
-          <br>Tél: 06 24 39 09 52
+          <br>Tél: 06 38 05 20 60
           <br>e-mail : 
           <a href="mailto:bergerblancsuisse@loreedesforetsblanches.fr " class="popup-link" style="color:black;">bergerblancsuisse@loreedesforetsblanches.fr </a></p>
           <a href="javascript:void(0)" id="popup-exit">Fermer</a>
@@ -98,7 +80,7 @@
       <button id="boutonContactezNous">Contactez-nous</button>
       <div id="popup-contact">
         <div class="popup-content" style="font-weight:200;">
-            <p> Tél: 06 24 39 09 52
+            <p>Tél: 06 38 05 20 60
             <br>e-mail : 
             <a href="mailto:bergerblancsuisse@loreedesforetsblanches.fr " class="popup-link" style="color:black;">bergerblancsuisse@loreedesforetsblanches.fr </a></p>
             <a href="javascript:void(0)" id="popup-exit2">Fermer</a>
@@ -106,19 +88,7 @@
       </div>
     
     </div>
-    <script>
-      document.getElementById("boutonChiotsDisponibles");
-      document.getElementById("paragAccueil");
-       if (window.matchMedia("(max-width:480px)").matches)
-    {
-      paragAccueil.style.fontSize="14px",
-      boutonChiotsDisponibles.style.marginRight="0px"
-    }
-    else
-  { 
-    boutonChiotsDisponibles.style.marginRight="30px"
-    }
-    </script>
+    
     <script>
     let bouton=document.getElementById("boutonChiotsDisponibles");
     bouton.onclick=function togglePopup(){
@@ -153,17 +123,30 @@
       </div>
     </div>
 
-<div class="parag"style="text-align:center;margin-top:-20px;">
+    <div id="containerPageVideo">
+      <div id="boutonsContainer">
+      <button class="boutonVideo bebes" style="background-color: #855375;">Portée en cours</button>
+      <button class="boutonVideo bebes" style="background-color: #855375;">Portée en cours</button>
+      <button class="boutonVideo adultes" style="background-color: #478897;">Adultes en canicross</button>
+      <button class="boutonVideo adultes" style="background-color: #478897;">Adultes en canicross</button>
+      </div>
+    
+      <div id="containerVideo"></div>
+      </div>
+      <script src="galerieVideo.js"></script>
 
-<br><a style="font-weight: bold;">-- Contactez-nous --</a>
-<br> &Eacute;levage L'Orée des Forêts blanches
-<br>Tél: 06 24 39 09 52
-<br>e-mail 
-<a href="mailto:bergerblancsuisse@loreedesforetsblanches.fr" style="color:rgb(1, 98, 98);text-decoration:none;">-> Cliquez ici.</a>
-</div>
+      <div id="containerImageYoutube">
+        <img class="imagesYoutube" src="imagesYoutube/test2 copie.jpg" style="width:20%;cursor: pointer;" onclick= "ouvrirFenetre ('https://youtube.com/shorts/J2QSsPEHU0w?si=IL4NbkW0LZXWKm8W')" >
+      </div>
+
+      <script>
+        function ouvrirFenetre(URL){
+          var maFenetre=window.open(URL,"FENETRE_02","width=360,height=780,location=1,titlebar=yes,resizable=yes");
+        }
+      </script>
 
 <!--DIV BOUTONS RESEAUX-->
-<div class="boutonsReseaux" >
+<div class="boutonsReseaux">
 
   <!--INSTAGRAM-->
   
@@ -199,12 +182,13 @@
   
   </div> <!--FIN DIV BOUTONS RESEAUX-->
 
-  <footer class="footer"  style="height:180px;">
-     
-    <br> &Eacute;levage L'Orée des Forêts blanches
-    <br>Tél: 06 24 39 09 52
-    <br><a href="mailto:bergerblancsuisse@loreedesforetsblanches.fr "style="color: #777777">bergerblancsuisse@loreedesforetsblanches.fr </a>
-    SIRET: 498 223 023 00025 / Eleveur ACACED.<br> 
-  </footer>
+<footer class="footer">
+ 
+  <br> &Eacute;levage L'Orée des Forêts blanches
+  <br>Tél: 06 38 05 20 60
+  <br><a href="mailto:bergerblancsuisse@loreedesforetsblanches.fr "style="color: #777777">bergerblancsuisse@loreedesforetsblanches.fr </a>
+  SIRET: 498 223 023 00025 / Eleveur ACACED.<br> 
+</footer>
 
+<script src="resize.js"></script>
 </body>

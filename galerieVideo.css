@@ -1,0 +1,32 @@
+#containerVideo{
+    width:300px;
+    height: 200px;
+    background: black;
+}
+#boutonsContainer{
+    display:flex;
+    flex-direction: column;
+    
+}
+#containerPageVideo{
+    margin:30px 0 30px 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boutonVideo{
+    height:35px;
+    width:200px;
+   margin-right: 30px;
+   margin-bottom:10px;
+    font-size: 15px;
+    font-weight: 400;
+  line-height: 2.1em;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+ border:none;
+ cursor:pointer;
+}
+

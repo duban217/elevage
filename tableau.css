@@ -1,4 +1,15 @@
 
+.titrePortraits
+{
+  transform: none;
+  color: rgb(54, 52, 53);
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  margin:50px 0;
+  text-align: center;
+  }
+
 .imgPortrait{
     width:301px;
     float:left;
@@ -6,7 +17,7 @@
     margin:0 20px 5px 0;
 }
 .container
-{max-width: 800px;background: white;
+{max-width: 800px;background: #f1f1f1;;
     margin: 0 auto 40px auto;
     padding:30px;
     border-radius: 10px;
@@ -20,23 +31,9 @@ clear:both;
 .container p {line-height:1.8;}
 
 .classeDescriptionChiens{
-    
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    color: #8e8e8e;
+    font-size: 18px;
+    color: rgb(54, 52, 53);
    
 }
 
-@media only screen and (max-width: 480px) {
-    .container{
-        margin-top: 20px;
-        padding:auto;
-        width: 300px;
-    }
-    .imgPortrait{
-        
-        float:left;
-        shape-outside: margin-box;
-       width:auto;
-}}
 

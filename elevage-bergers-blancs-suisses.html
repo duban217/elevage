@@ -59,23 +59,7 @@
     </section>
 
     <script src="accueil.js"></script>
-
-    <script>
-    window.onload=function(){
-      var sousTitre=document.querySelector("h1");
-      var titre=document.getElementById('titre');
-      var bienvenue=document.getElementById('Bienvenue');
-      var containerButton=document.querySelector('container-button');
-
-      if (window.matchMedia("(max-width:480px)").matches)
-      {
-        titre.style.fontSize="35px",
-        bienvenue.style.fontSize="35px",
-        sousTitre.style.fontSize="20px"
-      }
-    }
-    </script>
-    
+    <script src="resize.js"></script>
     
     <!--BOUTON CHIOTS DISPONIBLES-->
     <div class="container-button">
@@ -98,7 +82,7 @@
       <button id="boutonContactezNous">Contactez-nous</button>
       <div id="popup-contact">
         <div class="popup-content" style="font-weight:200;">
-            <p> Tél: 06 24 39 09 52
+            <p>Tél: 06 24 39 09 52
             <br>e-mail : 
             <a href="mailto:bergerblancsuisse@loreedesforetsblanches.fr " class="popup-link" style="color:black;">bergerblancsuisse@loreedesforetsblanches.fr </a></p>
             <a href="javascript:void(0)" id="popup-exit2">Fermer</a>
@@ -152,18 +136,27 @@
         <a><img src="ChiensSurRoute-1440.jpg"></a>
       </div>
     </div>
-
-<div class="parag"style="text-align:center;margin-top:-20px;">
-
-<br><a style="font-weight: bold;">-- Contactez-nous --</a>
-<br> &Eacute;levage L'Orée des Forêts blanches
-<br>Tél: 06 24 39 09 52
-<br>e-mail 
-<a href="mailto:bergerblancsuisse@loreedesforetsblanches.fr" style="color:rgb(1, 98, 98);text-decoration:none;">-> Cliquez ici.</a>
-</div>
-
+    
+    <!--Paragraphe Chiots disponibles+Présentation-->
+    <div class="parag"style="font-size=12px;line-height:38px;">
+      <p>
+        Bienvenue à l'élevage de l'Orée du Bois Blanc, élevage de Berger Blanc Suisse à poils longs depuis 2017.
+        Nous sommes situés dans les Landes, à 15 min de Dax, 50 min de Pau, 1h de Bayonne et 2h de Bordeaux.
+        <br><br>
+        Nous élevons les chiots en famille.
+        <br>
+        Nous leur apportons toute la sociabilisation qui convient, dès leur plus jeune âge et jusqu'au départ
+        de la maison, à leur neuvième semaine.
+        <br><br>
+        Les chiens et les chiots vivent dans un grand espace qui leur permet de se défouler à loisir. Les adultes pratiquent le canicross dans la campagne environnante et font de nombreuses balades. 
+        <br><br>
+        Les chiens sont nourris principalement à la viande et au poisson.
+    </p>
+      </div>
+    
+    
 <!--DIV BOUTONS RESEAUX-->
-<div class="boutonsReseaux" >
+<div class="boutonsReseaux">
 
   <!--INSTAGRAM-->
   
@@ -198,13 +191,14 @@
       </div></a>
   
   </div> <!--FIN DIV BOUTONS RESEAUX-->
-
-  <footer class="footer"  style="height:180px;">
+    <footer class="footer" style="height:180px;">
      
-    <br> &Eacute;levage L'Orée des Forêts blanches
-    <br>Tél: 06 24 39 09 52
-    <br><a href="mailto:bergerblancsuisse@loreedesforetsblanches.fr "style="color: #777777">bergerblancsuisse@loreedesforetsblanches.fr </a>
-    SIRET: 498 223 023 00025 / Eleveur ACACED.<br> 
-  </footer>
-
+      <br> &Eacute;levage L'Orée des Forêts blanches
+      <br>Tél: 06 24 39 09 52
+      <br><a href="mailto:bergerblancsuisse@loreedesforetsblanches.fr "style="color: #777777">bergerblancsuisse@loreedesforetsblanches.fr </a>
+      SIRET: 498 223 023 00025 / Eleveur ACACED.<br> 
+    </footer>
+    
 </body>
+
+</html>

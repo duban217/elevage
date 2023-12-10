@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+}
+#containerLogo{
+    width:100px;
+}
+#logo{
+    width:100%;
+}
+
+.container-button{
+    display:flex;
+    justify-content:center;
+   height:12vh;
+   flex-wrap: wrap;
+   
+}
+#boutonChiotsDisponibles{ 
+    height:35px;
+    width:200px;
+   margin-bottom:10px;
+    font-size: 15px;
+    font-weight: 400;
+  line-height: 2.1em;
+  color: white;
+  background: #24474f;
+  text-decoration: none;
+  letter-spacing: 1px;
+ border:none;
+ cursor:pointer;
+}
+#boutonContactezNous{
+    height:35px;
+    width:200px;
+   margin-bottom:10px;
+    font-size: 15px;
+    font-weight: 400;
+  line-height: 2.1em;
+  background:#3a727e;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border:none;
+  cursor:pointer;
+
+}
+
+#popup-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: rgba(0,0,0,0.7);
+   display:none;
+}
+#popup-overlay.open{
+    display: block; 
+    z-index: 1;
+}
+#popup-contact{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: rgba(0,0,0,0.7);
+   display:none;
+}
+#popup-contact.open{
+    display: block; 
+    z-index: 1;
+}
+.popup-content{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    max-width: 600px;
+    padding:30px;
+    box-sizing: border-box;
+    background: white;
+    
+}
+#popup-exit{
+    position:absolute;
+    top:-10px;
+    right:10px;
+    text-decoration: none;
+    color:white;
+    background: black;
+    padding: 5px,10px;
+    border-radius: 5px;
+}
+#popup-exit2{
+    position:absolute;
+    top:-10px;
+    right:10px;
+    text-decoration: none;
+    color:white;
+    background: black;
+    padding: 5px,10px;
+    border-radius: 5px;
+}
+

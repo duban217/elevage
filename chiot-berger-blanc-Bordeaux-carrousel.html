@@ -40,7 +40,7 @@
     <script type="text/javascript">
         
         document.body.onload=function(){
-          nbr=12;
+          nbr=4;
           p=0;
           
           containerSlidesMur=document.getElementById("containerSlidesMur");
@@ -52,17 +52,17 @@
           let position=localStorage.getItem("pos");
           let i;
          
-          for(i=position;i<=24;i++)
+          for(i=position;i<=8;i++)
           { 
             let div=document.createElement("div");
             div.className="photoMur";
-            div.style.backgroundImage="url('berger-blanc-suisse/berger-blanc-suisse"+i+".jpg')"; 
+            div.style.backgroundImage="url('chiot-berger-blanc-suisse-bordeaux/chiot-berger-blanc-suisse-bordeaux"+i+".jpg')"; 
            
            
       
             containerSlidesMur.appendChild(div);
             if (i>nbr){
-              div.style.backgroundImage="url('berger-blanc-suisse/berger-blanc-suisse"+(i-nbr)+".jpg')";
+              div.style.backgroundImage="url('chiot-berger-blanc-suisse-bordeaux/chiot-berger-blanc-suisse-bordeaux"+(i-nbr)+".jpg')";
              
             containerSlidesMur.appendChild(div);
             }

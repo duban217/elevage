@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html"charset="UTF-8">
+    <link rel="stylesheet" href="responsive.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="wsite-section-wrap.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="topnav.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="topnavResponsive.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="carrousel.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="boutonsRéseauxSociaux.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="mur.css" type="text/css" media="screen"/>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="popup.css" type="text/css" media="screen"/>
+
+    <meta name="viewport" content="width=device-width",initial-scale=0.86,maximum-scale=5.0, minimum-scale=0.86>
+    <script src="javascript.js"></script>
+    <script src="mur.js"></script>
+    <title> siteElevage </title>
+    
+</head>
+<body>
+    <div id="popup-overlay">
+        <div class="popup-content">
+            <p>Tous nos chiots ont été adoptés, mais contactez-nous pour les futures portées : 
+                vous serez prioritaires.
+            </p>
+            <br> &Eacute;leveur: Benoît Duban
+            <br>Tél: 06 24 39 09 52
+            <br>e-mail : 
+            <a href="mailto:leboisblanc@free.fr" class="popup-link">leboisblanc@free.fr</a>
+            <a href="javascript:void(0)" class="popup-exit">Fermer</a>
+        </div>
+    </div>
+
+<script>
+document.getElementById("boutonChiotsDisponibles").onclick=function togglePopup(){
+    let popup=document.getElementById("popup-overlay");
+    popup.classList.toggle("open");
+}
+</script>
+</body>
